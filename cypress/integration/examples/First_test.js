@@ -17,7 +17,12 @@ describe("My first test suite", () => {
         // another method without parent-child chaining
         cy.get(':nth-child(3) > .product-action > button')
 
-        //cy.get('.products').find('.product').each()
+        cy.get('.products').find('.product').each(($el, index, $list) => {
+            const veg_text = $el.find('h4.product-name').text()
+            if(veg_text.includes("Cashews")) {
+                cy.wrap($el).contains("ADD TO CART").click()
+            }
+          })
 
     })
 })

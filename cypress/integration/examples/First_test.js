@@ -24,10 +24,10 @@ describe("My first test suite", () => {
             }
           })
 
-          cy.get('.brand').then( () => {
-            
+          cy.get('.brand').then( (logo) => {
+            cy.log(logo.text())
           })
-          cy.log(logo.text())
+          
 
     })
 })

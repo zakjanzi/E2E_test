@@ -24,10 +24,26 @@ describe("My first test suite", () => {
             }
           })
 
+          cy.get('.brand').should('have.text', 'GREENKART')
+
           cy.get('.brand').then( (logo) => {
             cy.log(logo.text())
           })
+
+          //sometimes, you'd want to store the css selector in a variable
+          //you can't simply do const bla = cy.get(....)
+          //actually you can, you just need to resolve the promise yourself.
+          //this is related to the way cypress is built and how it handles promises
+
+          //cypress has the alias function which allows you to basically do that. see below
+
+          cy.get('.products').as('whatever')
+
+          // you can then reference the .product with '@whatever'
           
+
+
+
 
     })
 })

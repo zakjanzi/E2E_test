@@ -27,3 +27,5 @@ describe('Post Resource', () => {
 // 6. Find the element containing the text Submit.
 // 7. Click it.
 // 8. Find the h1 tag, ensure it contains the text "My First Post".
+
+//Cypress uses aliases. You can't store cy commands in a const. (otherwise you'll have to manually resolve the promise)

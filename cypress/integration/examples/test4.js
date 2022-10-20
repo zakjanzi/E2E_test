@@ -22,7 +22,7 @@ describe("Visible and Invisible elements", () => {
 
         cy.get("[value=radio2]").check().should('be.checked')
         //note that u need double quotes here.
-        // so: 1) get it. 2) check/click it. 3) prove it
+        // so: 1) get it. 2) check/click it. 3) validate it.
 
         
 

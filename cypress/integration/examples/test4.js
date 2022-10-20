@@ -2,8 +2,8 @@
 
 // Handling visible and invisible elements using assertions
 
-describe("My first test suite", () => {
-    it('My first test case', () => {
+describe("Visible and Invisible elements", () => {
+    it('My 4th test case', () => {
 
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
 

@@ -1,8 +1,10 @@
 /// <reference types="Cypress" />
 
-describe("My first test suite", () => {
+//Looping through elements using the each method.
 
-    it('My first test case', () => {
+describe("Looping through elements", () => {
+
+    it('My 2nd test case', () => {
 
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
        

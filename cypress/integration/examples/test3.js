@@ -1,8 +1,10 @@
 /// <reference types="Cypress" />
 
-describe("My first test suite", () => {
+// Checkboxes: Dynamic and static.
 
-    it('My first test case', () => {
+describe("Testing checkboxes", () => {
+
+    it('My 3rd test case', () => {
 
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
        

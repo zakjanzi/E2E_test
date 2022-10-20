@@ -2,8 +2,8 @@
 
 // Handling a table with contents inside it (using the each command)
 
-describe("My first test suite", () => {
-    it('My first test case', () => {
+describe("Tables & Sibling elements", () => {
+    it('My 6th test case', () => {
 
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         // sometimes, you have to manually write the css selector if it is not displayed

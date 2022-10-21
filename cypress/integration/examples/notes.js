@@ -80,3 +80,12 @@ describe('Hooks', () => {
 
 // Cypress gives you a feature that allows u to get data from an external source and drive them into your test
 // You can find this in 'Fixtures' folder.
+
+
+
+// validating:
+
+// for all behaviors, use 'be. ...'
+// for all properties, use 'should.have' ...
+cy.get('#dropdown-class-example').select('option2').should('have.value', 'option2')
+// the above is an example that combines both a behavior and property.

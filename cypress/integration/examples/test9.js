@@ -22,6 +22,10 @@ describe("Cypress Hooks", () => {
         cy.get(':nth-child(4) > .ng-untouched').should('have.value', this.data.name)
 
         cy.get(':nth-child(1) > .form-control').should('have.attr', 'minlength', '2')
+        // above, we are validating whether the input form (name) has a minimum length required of 2 characters.
+
+        cy.get('#inlineRadio3').should('be.disabled')
+        
 
         })
  

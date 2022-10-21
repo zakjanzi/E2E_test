@@ -75,3 +75,8 @@ describe('Hooks', () => {
 // Tests run
 // Any afterEach() hooks run
 // All after() hooks run (once)
+
+
+
+// Cypress gives you a feature that allows u to get data from an external source and drive them into your test
+// You can find this in 'Fixtures' folder.

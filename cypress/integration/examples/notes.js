@@ -89,3 +89,11 @@ describe('Hooks', () => {
 // for all properties, use 'should.have' ...
 cy.get('#dropdown-class-example').select('option2').should('have.value', 'option2')
 // the above is an example that combines both a behavior and property.
+
+
+// Environment variables in Cypress.
+
+// env vars are basically variables that you can access globally in your tests.
+// An example would be to make the URL you are testing on an environment variable.
+
+// add the URL in the cypress.json file then use it in your test: cy.visit(Cypress.env('url'))

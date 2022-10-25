@@ -5,4 +5,4 @@
 
 // }
 
-// export default HomePage;
+// export default ProductPage;

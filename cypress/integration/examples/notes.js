@@ -97,3 +97,5 @@ cy.get('#dropdown-class-example').select('option2').should('have.value', 'option
 // An example would be to make the URL you are testing on an environment variable.
 
 // add the URL in the cypress.json file then use it in your test: cy.visit(Cypress.env('url'))
+// The above will work as your base URL. you can visit other sections on the website by concatenating the path 
+// example: 'url' + '/shop'.

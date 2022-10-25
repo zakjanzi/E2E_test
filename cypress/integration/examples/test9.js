@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import HomePage from "../pageObjects/homepage"
+import HomePage from "../pageObjects/HomePage"
 
 // Understanding cypress hooks 
 
@@ -19,9 +19,11 @@ describe("Cypress Hooks", () => {
 
         cy.visit("https://rahulshettyacademy.com/angularpractice/")
 
+        // below, I am using page objects and fixtures instead of hard coding data. View them in ../pageObjects
+
         homePage.getEditBox().type(this.data.name)
 
-        homePage.getGender.select(this.data.gender)
+        homePage.getGender().select(this.data.gender)
 
         cy.get(':nth-child(4) > .ng-untouched').should('have.value', this.data.name)
 

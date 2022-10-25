@@ -3,6 +3,8 @@
 // Building customized cypress commands
 // Driving data from external sources (fixture)
 
+import HomePage from "../pageObjects";
+
 describe("Custom cypress commands", () => {
 
     before(function() {
@@ -12,6 +14,10 @@ describe("Custom cypress commands", () => {
       })
     
     it('My 10th test case', function() {
+
+      // below is how you create an object for the class
+      // for more info about classes, see pageObjects folder.
+      const homePage = new HomePage()
 
         cy.visit("https://rahulshettyacademy.com/angularpractice/")
 

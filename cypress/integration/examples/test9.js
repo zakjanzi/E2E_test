@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+import HomePage from "../pageObjects/homepage"
+
 // Understanding cypress hooks 
 
 describe("Cypress Hooks", () => {
@@ -13,11 +15,13 @@ describe("Cypress Hooks", () => {
     
     it('My 9th test case', function() {
 
+      const homePage = new HomePage()
+
         cy.visit("https://rahulshettyacademy.com/angularpractice/")
 
-        cy.get(':nth-child(1) > .form-control').type(this.data.name)
+        homePage.getEditBox().type(this.data.name)
 
-        cy.get('select').select(this.data.gender)
+        homePage.getGender.select(this.data.gender)
 
         cy.get(':nth-child(4) > .ng-untouched').should('have.value', this.data.name)
 

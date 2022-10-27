@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
+    "open cypress": "node_modules\\.bin\\cypress open",
     "chromeTest": "npm run test -- --browser chrome",
     "edgeTest": "npm run test -- --browser edge",
-    "test1": "npm run test -- --spec \"cypress/integration/test1.js/*\"",
-    "test2": "npm run test -- --spec \"cypress/integration/test2.js/*\"",
-    "test3": "npm run test -- --spec \"cypress/integration/test3.js/*\""
+    "test1": "npm run test -- --spec \"cypress/integration/examples/test1.js/*\"",
+    "test2": "npm run test -- --spec \"cypress/integration/examples/test2.js/*\"",
+    "test3": "npm run test -- --spec \"cypress/integration/examples/test3.js/*\""
     
   },
   "keywords": [],

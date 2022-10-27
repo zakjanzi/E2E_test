@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress open": "node_modules\\.bin\\cypress open",
-    "test": "node_modules\\.bin\\cypress run"
+    "test": "node_modules\\.bin\\cypress run",
+    "chromeTest": "npm run test -- --browser chrome",
+    "edgeTest": "npm run test -- --browser edge",
+    "test1": "npm run test -- --spec \"cypress/integration/test1.js/*\"",
+    "test2": "npm run test -- --spec \"cypress/integration/test2.js/*\"",
+    "test3": "npm run test -- --spec \"cypress/integration/test3.js/*\""
+    
   },
   "keywords": [],
   "author": "",

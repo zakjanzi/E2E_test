@@ -1,6 +1,9 @@
 /// <reference types="Cypress" />
 
-describe("Mocking HTTP requests", () => {
+// How to make requests in CpresS: https://docs.cypress.io/api/commands/request#Syntax
+
+
+describe("Mocking HTTP response", () => {
 
     it('My 11th test case', () => {
 
